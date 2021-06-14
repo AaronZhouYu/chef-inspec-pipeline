@@ -136,7 +136,7 @@ pipeline {
                 }
             }
         }
-        stage('Publish Artifact') {
+        stage('Publish Related Artifact') {
             steps {
                 echo 'test'
             }
