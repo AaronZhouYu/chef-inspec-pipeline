@@ -62,7 +62,9 @@ pipeline {
                     }
                 }
                 stage('Rubocop') {
-                    stepsecho 'test'
+                    steps {
+                        echo 'test'
+                    }
                 }
             }
         }
@@ -108,7 +110,7 @@ pipeline {
         stage('Update Artifact URLs and Versions') {
             parallel {
                 stage('Update Artifact URLs and Versions') {
-                    step {
+                    steps {
                         echo 'test'
                     }
                 }
